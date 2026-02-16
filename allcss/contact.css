@@ -1,0 +1,150 @@
+body{
+    background-color: #1b1f24;
+    color: #ffffffd2;
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    transition: 0.8s;
+}
+
+.cont{
+    margin: 1rem;
+    transform: scale(0);
+    animation: zoom-in 1s ease forwards;
+    
+}
+@keyframes zoom-in{
+    100%{
+        transform: scale(1);
+    }
+}
+
+header{
+    padding: 25px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: rgb(62, 49, 62);
+    border: blue;
+    border-radius: 1rem;
+    height: 2px;
+}
+
+.logo{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    border-color: #fff;
+}
+
+.form .us h1{
+    text-align: center;
+    font-weight: bold;
+    color: purple;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    margin-top: 3rem;
+}
+
+.form .inputs input{
+    display: block;
+    justify-self: center;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid rgb(67, 2, 77);
+    border-radius: 1rem;
+    height: 2rem;
+    width: 50%;
+    background: rgb(68, 55, 68);
+    &:hover{
+        color: #fff;
+        background: black;
+    }
+
+}
+
+.form .inputs textarea{
+    display: block;
+    justify-self: center;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid rgb(18, 0, 28);
+    border-radius: 1rem;
+    width: 50%;
+    background: rgb(68, 55, 68);
+    &:hover{
+        color: #fff;
+        background: black;
+    }
+
+}
+
+.form .subclr input{
+    display: block;
+    justify-self: center;
+    margin: 1rem 0 3rem;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 2rem;
+    padding: 0 1rem;
+    height: 2rem;
+    font-style: italic;
+    box-shadow: #b205b5;
+    &:hover{
+        color: #fff;
+        background: #023407;
+    }
+    
+}
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2rem;
+    gap: 1rem;
+    background: #022a06;
+    margin-top: 5rem;
+    
+}
+.footer .follow h1{
+    margin: -1rem 0 1rem;
+    text-align: center;
+    background: linear-gradient(to right, red, green, red);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: capitalize;
+    font-variant: small-caps;
+}
+.footer .follow a{
+    display: block;
+    justify-self: center;
+    color: #fff;
+    padding: 0.5rem;
+    
+}
+
+
+.footer .add{
+    grid-column: 1/5;
+    justify-self: center;
+    font-size: 1rem;
+}
